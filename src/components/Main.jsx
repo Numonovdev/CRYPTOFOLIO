@@ -11,8 +11,6 @@ function Main() {
             </div>
             <div className='w-full flex h-[100px] sm:h-[150px] md:h-[187px] justify-around'>
                 <HeroCarousel/>
-                
-                
             </div>
 
         </div>

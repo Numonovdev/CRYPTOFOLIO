@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -7,6 +7,7 @@ import { Autoplay } from "swiper/modules"
 import sampleImage from "../components/img.png";
 
 function HeroCarousel() {
+  
   return (
     <Swiper
       slidesPerView={4}
@@ -16,8 +17,7 @@ function HeroCarousel() {
         clickable: true,
       }}
       autoplay={{
-        delay: 3000, // Har 3 sekunda aylanish
-        disableOnInteraction: false, // Qo'lda harakatdan so'ng ham davom etadi
+        delay: 3000,         disableOnInteraction: false,
       }}
       modules={[Pagination, Autoplay]}
       className="mySwiper"
@@ -37,7 +37,6 @@ function HeroCarousel() {
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-[80px] lg:w-[120px] h-[80px] sm:h-[110px] md:h-[137px] flex flex-col gap-3 items-center justify-between">
-          {/* Rasmni import yoki URL orqali ko'rsatish */}
           <img src={sampleImage} loading="lazy" alt="ETH Icon" className="w-10 md:w-20" />
           <div className="text-white flex flex-col gap-1 items-center">
             <p className="text-[10px] sm:text-[16px]">
@@ -51,7 +50,6 @@ function HeroCarousel() {
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-[80px] lg:w-[120px] h-[80px] sm:h-[110px] md:h-[137px] flex flex-col gap-3 items-center justify-between">
-          {/* Rasmni import yoki URL orqali ko'rsatish */}
           <img src={sampleImage} loading="lazy" alt="ETH Icon" className="w-10 md:w-20" />
           <div className="text-white flex flex-col gap-1 items-center">
             <p className="text-[10px] sm:text-[16px]">
@@ -65,7 +63,6 @@ function HeroCarousel() {
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-[80px] lg:w-[120px] h-[80px] sm:h-[110px] md:h-[137px] flex flex-col gap-3 items-center justify-between">
-          {/* Rasmni import yoki URL orqali ko'rsatish */}
           <img src={sampleImage} loading="lazy" alt="ETH Icon" className="w-10 md:w-20" />
           <div className="text-white flex flex-col gap-1 items-center">
             <p className="text-[10px] sm:text-[16px]">
@@ -80,7 +77,6 @@ function HeroCarousel() {
       
       <SwiperSlide>
         <div className="w-[80px] lg:w-[120px] h-[80px] sm:h-[110px] md:h-[137px] flex flex-col gap-3 items-center justify-between">
-          {/* Rasmni import yoki URL orqali ko'rsatish */}
           <img src={sampleImage} loading="lazy" alt="ETH Icon" className="w-10 md:w-20" />
           <div className="text-white flex flex-col gap-1 items-center">
             <p className="text-[10px] sm:text-[16px]">
