@@ -77,12 +77,12 @@ function Header() {
                   className="rounded-md w-1/2"
                   loading="lazy"
                 />
-                <p className="font-Roboto text-sm sm:text-xl text-white mt-7">
-                  ${data.market_cap.toLocaleString()}
+                <p className="font-Roboto text-[5px] sm:text-sm ld:text-lg text-white mt-7">
+                  ${data.market_cap }
                 </p>
                 <button
                   onClick={() => removeFromWatchlist(data.id)}
-                  className="bg-[#FF0000] sm:w-[106px] flex items-center mt-3 justify-center px-1 text-sm sm:text-xl text-white"
+                  className="bg-[#FF0000] text-[5px] sm:w-[106px] flex items-center mt-3 justify-center px-1 text-sm sm:text-xl text-white"
                 >
                   Remove
                 </button>
